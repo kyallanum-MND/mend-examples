@@ -357,3 +357,28 @@ export MEND_GLOBAL_ORG_TOKEN="<global_org_token>"
 # Run the script
 python ./get-all-users-under-global-org.py
 ```
+
+<hr />
+<br />
+
+# Close all pending tasks in an organization
+
+[cleanup-pending-tasks.py](cleanup-pending-tasks.py)
+
+This script gathers every single pending task in an organization, and closes each one out.
+<br />
+
+**Prerequisites:**
+
+* `python 3.9+`
+
+**Execution:**
+```shell
+# Create Environment Variables
+export MEND_URL="https://saas.whitesourcesoftware.com"
+export WS_APIKEY="<org_token>"
+export MEND_USER_KEY="<userkey>"
+
+# Run the script
+python ./cleanup-pending-tasks.py
+```
